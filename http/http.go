@@ -260,6 +260,10 @@ func (stClient *Client) GetClosestServers(servers []Server) []Server {
 func (stClient *Client) GetLatencyURL(server Server) string {
 	u := server.URL
 	splits := strings.Split(u, "/")
+	if len(splits) <= 1 {
+		return ""
+	}
+
 	baseURL := strings.Join(splits[1:len(splits)-1], "/")
 	latencyURL := "http:/" + baseURL + "/latency.txt"
 
