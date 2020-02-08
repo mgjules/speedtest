@@ -4,7 +4,7 @@
 A golang package for running speedtests against speedtest.net.
 
 ## Usage
-```
+```go
 package main
 
 import (
