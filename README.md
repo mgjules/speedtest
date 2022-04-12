@@ -10,7 +10,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JulesMike/speedtest"
+	"github.com/mgjules/speedtest"
 )
 
 func main() {
@@ -47,7 +47,7 @@ Major thanks to @zpeters for the excellent [github.com/zpeters/speedtest](https:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/JulesMike/speedtest. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mgjules/speedtest. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

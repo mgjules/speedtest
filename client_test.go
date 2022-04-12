@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	sthttp "github.com/JulesMike/speedtest/http"
+	sthttp "github.com/mgjules/speedtest/http"
 )
 
 func EmptyTest(t *testing.T) {

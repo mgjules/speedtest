@@ -8,7 +8,7 @@ jobs:
       TEST_RESULTS: /tmp/test-results
       CC_TEST_REPORTER_ID: 83b6b0309d332682c6bbefffc2017794e8a65135de35fc944d4520390e5abba3
 
-    working_directory: /go/src/github.com/JulesMike/speedtest
+    working_directory: /go/src/github.com/mgjules/speedtest
     steps:
       - checkout
       - run: mkdir -p $TEST_RESULTS

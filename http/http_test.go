@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	stxml "github.com/JulesMike/speedtest/xml"
+	stxml "github.com/mgjules/speedtest/xml"
 )
 
 func TestCheckHTTPSuccess(t *testing.T) {

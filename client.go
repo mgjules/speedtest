@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JulesMike/speedtest/http"
-	"github.com/JulesMike/speedtest/util"
 	"github.com/dchest/uniuri"
+	"github.com/mgjules/speedtest/http"
+	"github.com/mgjules/speedtest/util"
 )
 
 var (
@@ -111,7 +111,6 @@ func (client *Client) Download(server http.Server) (float64, error) {
 		return avgSpeed / float64(len(urls)), nil
 	}
 	return maxSpeed, nil
-
 }
 
 // Upload runs a "normal" speedtest upload test

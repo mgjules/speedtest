@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JulesMike/speedtest/coords"
-	stxml "github.com/JulesMike/speedtest/xml"
+	"github.com/mgjules/speedtest/coords"
+	stxml "github.com/mgjules/speedtest/xml"
 )
 
 const max = "max"
@@ -295,7 +295,6 @@ func (stClient *Client) GetLatency(url string) (result float64, err error) {
 		req.Header.Set("User-Agent", stClient.SpeedtestConfig.UserAgent)
 
 		resp, err := client.Do(req)
-
 		if err != nil {
 			return result, err
 		}
@@ -338,7 +337,6 @@ func (stClient *Client) GetLatency(url string) (result float64, err error) {
 	}
 
 	return result, nil
-
 }
 
 // GetFastestServer test all servers until we find numServers that
@@ -351,7 +349,6 @@ func (stClient *Client) GetFastestServer(servers []Server) (Server, error) {
 
 	for server := range servers {
 		latency, err := stClient.GetLatency(stClient.GetLatencyURL(servers[server]))
-
 		if err != nil {
 			return Server{}, err
 		}
